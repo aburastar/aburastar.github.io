@@ -1,3 +1,2177 @@
-Welcome to the Aburastar GITHUB site. 
-Amazing things will come shortly!
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>Aburastar Digital Dashboard</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <style type="text/css" title="Amaya theme">
+/* Modern style for Amaya Editor Lite */
 
+/* default rules for the whole document */
+body {
+    font-size: 11pt;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    text-align:center;
+    background-color: black;
+    line-height: 1.2em;
+    margin-left: 4em;
+    margin-right: 2em;
+   }
+
+/* paragraphs */
+p  {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+   }
+
+/* headings */
+h1 {
+    font-size: 180%;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    text-align: left;
+    padding: 0;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+   }
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.1em;
+   }
+h3 {
+    font-size: 130%;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin-top: 1.3em;
+    margin-bottom: 1.1em;
+   }
+h4 {
+    font-size: 110%;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+   }
+h5 {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+
+/* divisions */
+div {
+    padding: 0;
+    margin-top: 0em;
+    margin-bottom: 0em;
+   }
+
+/* lists */
+ul, ol {
+    padding: 0 0 0 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+li {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+   }
+li p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+dl {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+   }
+dl dl {
+    margin-top: 0em;
+    margin-bottom: 0em;
+   }
+dt {
+    padding: 0;
+    font-weight: bold;
+    margin-top: .3em;
+    margin-bottom: .3em;
+   }
+dd {
+    padding: 0;
+    margin-top: .3em;
+    margin-left: 3em;
+    margin-bottom: .3em;
+   }
+dl p {
+    margin-top: .3em;
+    margin-bottom: .3em;
+   }
+
+/* inline */
+strong {
+    font-weight: bold;
+   }
+em {
+    font-style: italic;
+   }
+code {
+    font-family: Courier New, Courier, monospace;
+   }
+ins {
+    background-color: yellow;
+    text-decoration: underline;
+   }
+del {
+    text-decoration: line-through;
+   }
+
+/* anchors */
+a[href] {
+    color: blue;
+    text-decoration: underline;
+   }
+
+/* end */
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main {
+  padding: 60px;
+  margin-top: 60px;
+  scroll-margin-top: 20rem; /* One line solution. :-) */
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.bookmark {
+    margin-top:-120px;
+    padding-bottom:120px; 
+    display:block;
+}
+/* The grid: Four equal columns that floats next to each other */
+ .column {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+ .column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+ .column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+ .container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+ .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+<h1><span style="color:#ffffff"><span style="font-size: 32pt">A</span>BURASTAR
+<span style="font-size: 32pt">D</span>IGITAL <span
+style="font-size: 28pt"><span style="font-size: 32pt">D</span></span>ASHBOARD
+<span style="font-size: 9pt">&emsp; &emsp; &emsp; &emsp; &emsp; <a
+href="#111R"><span style="color:#00ffff">ADD-111R</span></a> &emsp; <a
+href="#PRO"><span style="color:#00ffff">ADD-PRO / ADD-LITE</span></a> &emsp; <a href="#Feature"><span style="color:#00ffff">Features</span></a> &emsp; <a href="#PICS"><span style="color:#00ffff">Gallery</span></a> &emsp; <a href="#UG"><span style="color:#00ffff">User Guide</span></a>
+
+</h1>
+</div>
+
+<div class="main">
+
+<span class="bookmark" id="111R"></span>
+<p><span style="color:#ffffff"><strong style="font-size: 15pt"><em><span
+style="font-size: 18pt"><em><span style="font-size: 16pt"><a name="111R"
+id="111R">Fall in love again</a></span></em></span></em></strong></span></p>
+
+<p style="color:#ffffff"><span style="font-size: 11pt">Being a loyal Lotus Elise owner (and driver!) for
+almost 10 years - it means a lot to me and I proudly consider myself a
+&ldquo;car guy&rdquo; with tons of passion about cars! The sophisticate and
+versatile ADD-111R - a special 10th birthday gift I designed, coded, and tuned
+with all the passions for my beloved Elise. I feel y'all Lotus enthusiasts will
+also like it so check it out.</p>
+
+<p style="color:#ffffff"><a
+href="https://play.google.com/store/apps/details?id=com.aburastar.add111rs"><span
+style="color:#00ffff" style="font-size: 11pt">Download</span></a> (or Search <span
+style="color:#ffff00" style="font-size: 11pt">Shihwei Yu</span> from the main Google Play Store)</p>
+
+<p>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/RADKgxAL0rg" frameborder="0">
+</iframe></p>
+
+<p></p>
+
+<br><br><br><br><br>
+<span class="bookmark" id="PRO"></span>
+<p><span style="color:#ffffff"><strong style="font-size: 15pt"><em><span
+style="font-size: 18pt"><em><span style="font-size: 16pt"><a name="PRO"
+id="PRO">It's more than from point A to
+B</a></span></em></span></em></strong></span></p>
+
+<p style="color:#ffffff"><span style="font-size: 11pt">The ADD-PRO (same features as ADD-111R except removed
+the Lotus Elise gear info) perfectly complements my GLC43 coupe and C350 for
+any adventure trip and boring commute. Easily configurable to what you like and
+it memorizes your preference. Swipe thru many modes that suit you best. An 0-60
+mph (or 0-100 km/h) test run is there for a little fun. And the trip
+summary/trip records save some great memory (or bragging story) for you. </p>
+
+<p style="color:#ffffff"><span style="font-size: 11pt">The ADD-LITE keeps only the most frequently used NORMAL and EASY modes &#x2013; the ADD-LITE gives the quick glance for speed and convenient over speed warning. It&#x2019;s simply a little tool reduces the stress of your driving. (Perfect gift for the ones you loved) </p>
+
+<p style="color:#ffffff"><a
+href="https://play.google.com/store/apps/details?id=com.aburastar.add_pro"><span
+style="color:#00ffff" style="font-size: 11pt">Download ADD-PRO</span></a> (or Search <span
+style="color:#ffff00" style="font-size: 11pt">Shihwei Yu</span> from the main Google Play Store)<br>
+
+<a
+href="https://play.google.com/store/apps/details?id=com.aburastar.add_lite"><span
+style="color:#00ffff" style="font-size: 11pt">Download ADD-LITE</span></a> (or Search <span
+style="color:#ffff00" style="font-size: 11pt">Shihwei Yu</span> from the main Google Play Store)</p>  </span>
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xhJAeaMfJR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+<p> </p> 
+<br><br><br><br><br>
+
+<span class="bookmark" id="PICS"></span>
+<p><span style="color:#ffffff"><strong style="font-size: 15pt"><em><span
+style="font-size: 18pt"><em><span style="font-size: 16pt"><a name="PICS"
+id="PICS">Timeless Beauty (Click to see full size picture)
+</a></span></em></span></em></strong></span></p>
+<!-- The four columns -->
+
+<div class="row">
+
+<div class="column">
+<img src="111R01.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R02.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R03.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R04.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R05.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R06.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R07.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="111R08.jpg" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+</div>
+
+
+<div class="row">
+<div class="column">
+<img src="PRO09.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO02.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO03.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO04.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO05.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO06.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO07.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+
+<div class="column">
+<img src="PRO08.png" alt="" style="width:100%" onclick="myFunction(this);" />
+</div>
+</div>
+
+<div class="container">
+<span onclick="this.parentElement.style.display='none'"
+class="closebtn">×</span> <img id="expandedImg" style="width:100%" /> 
+
+<div id="imgtext">
+</div>
+</div>
+<script type="text/javascript">
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}</script>
+
+
+<p></p>
+<br><br><br><br><br>
+
+<span class="bookmark" id="Feature"></span>
+<p><span style="color:#ffffff"><strong style="font-size: 15pt"><em><span
+style="font-size: 18pt"><em><span style="font-size: 16pt"><a name="Feature"
+id="Feature">
+Features</a></span></em></span></em></strong></span></p>
+
+<table class=GridTable5DarkAccent1 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-border-alt:solid white .5pt;mso-yfti-tbllook:1696;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.5pt solid white;mso-border-insidev:.5pt solid white;
+ mso-border-bottom-themecolor:background1;mso-border-insideh-themecolor:background1;
+ mso-border-insidev-themecolor:background1;mso-border-left-themecolor:background1;
+ mso-border-right-themecolor:background1;mso-border-top-themecolor:background1'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-right:none;mso-border-top-alt:solid white .5pt;mso-border-left-alt:
+  solid white .5pt;mso-border-bottom-alt:solid white .5pt;background:#4472C4;
+  padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:accent1;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:5'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Modes/Features<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:solid white 1.0pt;
+  border-left:none;border-bottom:solid white 1.0pt;border-right:none;
+  mso-border-top-alt:solid white .5pt;mso-border-bottom-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-yfti-cnfc:1'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri;color:white'>ADD-LITE<o:p></o:p></span></b></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:solid white 1.0pt;
+  border-left:none;border-bottom:solid white 1.0pt;border-right:none;
+  mso-border-top-alt:solid white .5pt;mso-border-bottom-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-yfti-cnfc:1'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri;color:white'>ADD-PRO<o:p></o:p></span></b></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border:solid white 1.0pt;
+  border-left:none;mso-border-top-alt:solid white .5pt;mso-border-bottom-alt:
+  solid white .5pt;mso-border-right-alt:solid white .5pt;background:#4472C4;
+  padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:accent1;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-yfti-cnfc:1'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri;color:white'>ADD-111R<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Real
+  time speedometer <o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Real
+  time RPM (in graphic and numeric)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Configurable
+  engine red-line RPM (to match your car)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Max.
+  RPM indicator <o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Dynamic
+  red-line as engine warm up reminder <o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>3-step
+  sequential shift indicator (matching RPM red-line)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Throttle
+  position (relative %; in graphic and numeric)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Coolant
+  temperature (in C or F) <o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Fuel
+  level (in %)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Voltage
+  <o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Clock<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>One
+  touch switching between mph and km/h<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Configurable
+  speed alert with one touch enabled/disabled<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>One
+  touch reset trip info<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Auto
+  loading preference / SETUP configuration<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Swipe
+  to change display modes <o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Easy<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Normal<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>RACE<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Sunlight<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>0-60
+  mph (0-100 km/h) test<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Trip
+  Summary<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Trip
+  Start / Stop<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Trip
+  Save<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Start
+  time/date<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Elapsed
+  time<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Trip
+  distance<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Max
+  speed<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Max
+  throttle (relative)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Max
+  RPM<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Best
+  0-60 mph (0-100 km/h)<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:1.5in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Trip
+  Records<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:32'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Swipe
+  up/down browsing<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:33'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='margin-left:2.0in;line-height:normal;mso-yfti-cnfc:
+  4'><b style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Record
+  Delete<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'>X<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:34;mso-yfti-lastrow:yes'>
+  <td width=287 valign=top style='width:287.25pt;border:solid white 1.0pt;
+  border-top:none;mso-border-top-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#4472C4;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-border-bottom-themecolor:background1;mso-border-left-themecolor:
+  background1;mso-border-right-themecolor:background1;mso-border-top-themecolor:
+  background1'>
+  <p class=MsoNormal style='line-height:normal;mso-yfti-cnfc:4'><b
+  style='mso-bidi-font-weight:normal'><span style='font-family:Calibri;
+  mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:white'>Google
+  Play Store link<o:p></o:p></span></b></p>
+  </td>
+  <td width=57 valign=top style='width:57.0pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><a href="https://play.google.com/store/apps/details?id=com.aburastar.add_lite">ADD-LITE</a><o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:61.5pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;mso-border-top-alt:
+  solid white .5pt;mso-border-left-alt:solid white .5pt;mso-border-alt:solid white .5pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;mso-background-themecolor:
+  accent1;mso-background-themetint:51;mso-border-bottom-themecolor:background1;
+  mso-border-left-themecolor:background1;mso-border-right-themecolor:background1;
+  mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><a href="https://play.google.com/store/apps/details?id=com.aburastar.add_pro">ADD-PRO</a><o:p></o:p></span></p>
+  </td>
+  <td width=62 valign=top style='width:62.25pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  mso-border-top-alt:solid white .5pt;mso-border-left-alt:solid white .5pt;
+  mso-border-alt:solid white .5pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;
+  mso-background-themecolor:accent1;mso-background-themetint:51;mso-border-bottom-themecolor:
+  background1;mso-border-left-themecolor:background1;mso-border-right-themecolor:
+  background1;mso-border-top-themecolor:background1'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-family:Calibri;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+  Calibri'><a href="https://play.google.com/store/apps/details?id=com.aburastar.add111rs">ADD-111R</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p></p>
+<br><br><br><br><br>
+
+<span class="bookmark" id="UG"></span>
+<p><span style="color:#ffffff"><strong style="font-size: 15pt"><em><span
+style="font-size: 18pt"><em><span style="font-size: 16pt"><a name="UG"
+id="UG">Quick User Guide</a></span></em></span></em></strong></span></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">1. Plug the Bluetooth ELM327 based OBD2 dongle into your car. (recommending
+the OBD2 dongle with power switch so you can turn it full off when not using
+it)</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">2. In your android phone, go to Setting - Bluetooth: turn on Bluetooth,
+finding the OBD2 dongle and pairing it (entering 1234 or 0000 if you are asked
+for passcode)</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">3. Once the OBD2 is successfully paired, launch the ADD-PRO and watch the
+cool opening welcome screen. Read and commit to the safety warning message.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">4. The ADD-PRO shall start showing the RPM, coolant temp, voltage,
+fuel...information of your car is a few seconds. You are ready to enjoy the
+ADD-PRO.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">5. Click the MPH to switch to imperial system (mph) or km/h to metric system
+for your local system.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">6. You can touch the SETUP to configure the max speed alert and red-line RPM
+to match your car. NOTE: for safety, the Setup is disabled if car is moving.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">7. You can turn on (or turn off) the speed alert by simply touch the ALERT
+button.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">8. You can reset the trip count by touch the RESET button. NOTE this count
+as resetting the trip info so the max. speed, max. RPM, and max throttle...
+will also be reset.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">9. You can change modes by simply swipe to left of right.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">10. NOTE: 0-60mph (0-100km/h) test mode can only activate when the engine is
+warmed up (when coolant temperature is at least 80 degree C. So it will skip to
+next mode if your coolant is less than 80C.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">11. The trip summary mode comes with time keeping - you can use it to record
+lap time by touch SAVE button. You can stop the timing as concluding the trip
+and SAVE it as well. The best 0-60mph run will be also records here if it's
+available.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">12. The trip records mode shows all the trip (or lap) information you had
+saved. You can scroll the records by swipe up / down. Touch the DELETE button
+to delete a record you don't need.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">13. Touch the "?" for short help and email contact for supports and
+comments.</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">14. Touch OFF to exit the ADD-PRO when you have done using the ADD-PRO.
+(Turn off the OBD2 or unplug it to save car's battery)</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">15. Your preference / setting used in last time will be remembered and
+applied automatically when you launch the ADD-PRO next time (set it once and
+use it as a real tool everyday!)</p>
+
+<p></p>
+
+<p style="color:#ffffff" style="font-size: 11pt">16. Older model of cars or older model of OBD2 may restrict and limit
+certain information NOT available for displaying.</p>
+
+<p></p>
+<br><br><br><br><br>
+
+<p><span style="color:#ffffff"><strong style="font-size: 15pt"><em><span
+style="font-size: 18pt"><em><span style="font-size: 16pt"><a name="COT"
+id="COT">Contact</a></span></em></span></em></strong></span></p>
+
+<p style="color:#ffffff">We value your comments. Email us at <a href="mailto:aburastar888@gmail.com">aburastar888@gmail.com</a> </p>
+
+</div>
+
+</body>
+</html>
